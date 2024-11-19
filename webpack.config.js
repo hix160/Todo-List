@@ -14,6 +14,7 @@ module.exports = {
   devServer: {
     watchFiles: [   "./src/template.html",
                     "./src/index.js",
+                    "./src/main.js",
                     "./src/styles/style.css"    
                 ],
   },

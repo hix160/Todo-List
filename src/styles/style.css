@@ -1,0 +1,116 @@
+* {
+    
+}
+
+:root {
+    --sidebar-back-color: whitesmoke;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1.5fr 9fr;
+    grid-template-rows: 10fr 1fr;
+}
+
+/*          Main            */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+
+.main-top {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#card-container {
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    gap:2rem;
+}
+
+.card {
+    
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.sidebar {
+    background-color: var(--sidebar-back-color);
+    
+}
+
+.sidebar.top > .sidebar-button {
+    display: flex;
+    align-items: center;
+    margin:1rem;
+    
+    font-size: 1rem;
+    border: 0;
+
+    background-color: darkgrey;
+    gap: 4px;
+    
+}
+
+/*     BOTTOM SIDEBAR */
+
+.sidebar.bottom {
+    background-color: red;
+    
+}
+
+#new-list{
+    display: flex;
+    align-items: center;
+    gap:4px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+
+footer {
+    height: 50px;
+    
+    align-items: bottom;
+    bottom: 0;
+    left: 0;
+    
+    position: relative;
+    
+    
+}
+
+/*      TASK FORM       */
+
+
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
